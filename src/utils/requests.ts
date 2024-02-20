@@ -57,4 +57,7 @@ export const setTransactionApproval = ({ transactionId, value }: SetTransactionA
   }
 
   transaction.approved = value
+  console.log("transaction")
+  console.log(transaction)
+  console.log(data.transactions.find((currentTransaction) => currentTransaction.id === transactionId))
 }
